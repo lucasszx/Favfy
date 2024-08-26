@@ -1,0 +1,188 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover .titulo, 
+.home-link:hover .logo {
+    color: #1DB954;
+}
+
+.home-link:hover .logo {
+    filter: invert(42%) sepia(92%) saturate(441%) hue-rotate(83deg) brightness(92%) contrast(92%);
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+    transition: filter 0.3s ease;
+}
+
+.titulo {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #1DB954;
+}
+
+main {
+    margin-top: 50px/* Ajuste o valor se necessário para evitar que o conteúdo se sobreponha ao cabeçalho */
+}
+
+.cantores {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h2 {
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover h2 {
+    color: #1DB954;
+}
+
+/* aaaaaaaaaaaaa */
+
+.portfolio-bibliografia {
+    margin-left: 100px;
+}
+
+.portfolio-bibliografia h1 {
+    color: #1DB954;
+    margin-bottom: 10px;
+}
+
+.bibliografia {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    margin-right: 100px;
+    padding: 20px;
+}
+
+.bibliografia h2 {
+    margin-bottom: 10px;
+}
+
+.bibliografia p {
+    letter-spacing: 0.5px;
+}
+
+.portifolio-top-musicas {
+    margin-left: 100px;
+}
+
+.portifolio-top-musicas h1 {
+    color: #1DB954;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.top-musicas{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.semelhantes{
+    margin-left: 100px;
+}
+
+.semelhantes h1{
+    color: #1DB954;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.art-semelhante{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
